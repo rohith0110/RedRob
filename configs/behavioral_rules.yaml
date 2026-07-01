@@ -1,0 +1,27 @@
+version: phase2
+availability_multiplier:
+  min: 0.72
+  max: 1.08
+inputs:
+  open_to_work_weight: 0.2
+  response_rate_weight: 0.18
+  response_time_weight: 0.12
+  interview_completion_weight: 0.12
+  notice_period_weight: 0.12
+  relocation_weight: 0.08
+  work_mode_weight: 0.1
+  relevant_assessment_weight: 0.05
+  github_activity_weight: 0.02
+  last_active_recency_weight: 0.04
+location_logistics:
+  preferred_modes:
+    - remote
+    - flexible
+  preferred_country: india
+  preferred_score: 1.0
+  fallback_score: 0.55
+last_active_recency:
+  recent_days: 60
+  stale_days: 180
+  recent_score: 1.0
+  stale_score: 0.35

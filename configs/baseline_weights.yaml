@@ -1,0 +1,16 @@
+version: phase1.5
+positive_score_weights:
+  career_text_relevance: 0.40
+  production_evaluation: 0.20
+  python_engineering: 0.15
+  experience_plausibility: 0.10
+  location_logistics: 0.10
+  behavioral_availability: 0.05
+anomaly_penalty:
+  none: 0.0
+  minor: 0.08
+  severe: 0.25
+  default: 0.08
+low_relevance_cap:
+  threshold: 0.08
+  max_score: 35.0

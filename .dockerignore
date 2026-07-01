@@ -1,0 +1,16 @@
+.git
+__pycache__/
+.pytest_cache/
+.remember/
+.venv/
+graphify-out/
+runs/
+submissions/
+data/
+tests/
+docs/
+presentation/
+release/
+sample_data/
+app.py
+requirements-dev.txt

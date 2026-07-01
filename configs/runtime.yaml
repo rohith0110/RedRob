@@ -1,0 +1,4 @@
+version: phase2-preflight
+processing_mode: memory
+chunk_size: 5000
+dataset_reference_date: "2026-06-30"

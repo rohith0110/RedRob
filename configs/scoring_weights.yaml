@@ -1,0 +1,14 @@
+version: phase2
+feature_weights:
+  career_relevance_score: 0.35
+  retrieval_ranking_depth_score: 0.15
+  production_evaluation_score: 0.20
+  product_shipper_score: 0.10
+  experience_recent_coding_score: 0.08
+  corroborated_skill_score: 0.05
+  preferred_differentiator_score: 0.03
+  location_logistics_score: 0.04
+score_caps:
+  semantic_score_cap: 0.08
+  unsupported_skill_risk_cap: 1.0
+  anomaly_risk_cap: 1.0

@@ -1,0 +1,47 @@
+participant_id: "mishra.anshika0110@gmail.com"
+team_name: "loading"
+
+primary_contact:
+  name: "Anshika Mishra"
+  email: "mishra.anshika0110@gmailcom"
+  phone: "7978187677"
+
+team_members:
+  - name: "Rohith Rathod"
+    email: "banothrohithrathod@gmail.com"
+    role: "6309845588"
+
+github_repo: "TODO"
+sandbox_link: "TODO"
+reproduce_command: "python rank.py --mode v2 --candidates ./data/candidates.jsonl --out ./submissions/TODO_PARTICIPANT_ID.csv --run-id release_final_local --run-dir ./runs"
+
+compute:
+  platform: "Local Windows workstation"
+  cpu_cores: 20
+  ram_gb: 31.7
+  python_version: "3.14.6"
+  os: "Windows-11-10.0.26200-SP0"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+methodology_summary: |
+  Offline deterministic candidate ranker that prioritizes grounded career evidence over raw skill lists.
+  The pipeline extracts retrieval, ranking, production, engineering, and differentiator evidence; applies
+  credibility and bounded availability modifiers; and writes recruiter-facing top-100 explanations through
+  a deterministic grounded reasoning layer. Final submission ordering is descending score, then candidate_id
+  ascending. Semantic scoring is disabled by default in the submitted release configuration.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  cpu_only_ranking: true
+  network_during_ranking: false
+  hosted_api_during_ranking: false
+  gpu_during_ranking: false
+  semantic_runtime_behavior: "disabled by default"
+  hosted_llm_calls_in_final_runtime: false
+  honeypot_check_done: false
+  reproduction_tested: true

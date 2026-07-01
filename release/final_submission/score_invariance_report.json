@@ -1,0 +1,246 @@
+{
+  "run_id": "release_final_local",
+  "run_path": "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local",
+  "fresh_runtime_seconds": 226.949,
+  "peak_memory_mb": 3982.164,
+  "peak_memory_method": "psutil working set",
+  "stage_timings": {
+    "audit": 8.386,
+    "behavioral": 21.5,
+    "credibility": 24.285,
+    "evidence": 63.675,
+    "normalized": 60.211,
+    "reasoning_v2": 15.278,
+    "scores_v2": 25.346,
+    "submission_v2": 0.246
+  },
+  "runtime_status": "PASS",
+  "run_kind": "fresh",
+  "git_commit": "dc2c92deae0e8cc95672f1b682c2e094b32df1eb",
+  "working_tree_dirty": false,
+  "validator_result": {
+    "passed": true,
+    "errors": []
+  },
+  "resume_runtime_seconds": 6.295,
+  "reasoning_diversity": {
+    "top_100_count": 100,
+    "exact_duplicate_count": 41,
+    "max_exact_duplicate_count": 5,
+    "normalized_template_family_distribution": {
+      "recommendation_matching_heavy": 31,
+      "availability_logistics_constrained": 26,
+      "retrieval_ranking_heavy": 2,
+      "credibility_constrained": 1,
+      "lower_cutoff_candidate": 40
+    },
+    "unique_full_string_count": 59,
+    "unique_first_sentence_count": 22,
+    "unique_second_sentence_count": 28,
+    "rank_band_distribution": {
+      "1-10": 10,
+      "11-30": 20,
+      "31-60": 30,
+      "61-100": 40
+    },
+    "evidence_category_distribution": {
+      "retrieval_ranking_relevance": 94,
+      "ranking_evaluation_experimentation": 3,
+      "production_delivery_systems": 3
+    },
+    "material_caveat_count": 79,
+    "grounding_pass_count": 100,
+    "grounding_fail_count": 0,
+    "concrete_evidence_count": 100
+  },
+  "reasoning_style_quality": {
+    "total_explanations": 100,
+    "top_100_count": 100,
+    "rank_band_style_distribution": {
+      "1-10": {
+        "recommendation_matching_heavy": 6,
+        "availability_logistics_constrained": 3,
+        "retrieval_ranking_heavy": 1
+      },
+      "11-30": {
+        "recommendation_matching_heavy": 11,
+        "availability_logistics_constrained": 9
+      },
+      "31-60": {
+        "recommendation_matching_heavy": 14,
+        "availability_logistics_constrained": 14,
+        "retrieval_ranking_heavy": 1,
+        "credibility_constrained": 1
+      },
+      "61-100": {
+        "lower_cutoff_candidate": 40
+      }
+    },
+    "exact_duplicate_count": 41,
+    "max_exact_duplicate_count": 5,
+    "repeated_opening_threshold": 2,
+    "opening_window_size": 5,
+    "repeated_opening_count": 48,
+    "repeated_nearby_opening_count": 48,
+    "awkward_pattern_count": 0,
+    "lint_pass_count": 100,
+    "lint_fail_count": 0,
+    "duplicate_adjacent_word_count": 0,
+    "lowercase_sentence_start_count": 0,
+    "dangling_fragment_count": 0,
+    "bare_fragment_count": 0,
+    "repeated_snippet_count": 0,
+    "generic_praise_warning_count": 0,
+    "forbidden_term_count": 0,
+    "rank_band_breakdown": {
+      "1-10": {
+        "count": 10,
+        "lint_pass_count": 10,
+        "lint_fail_count": 0
+      },
+      "11-30": {
+        "count": 20,
+        "lint_pass_count": 20,
+        "lint_fail_count": 0
+      },
+      "31-60": {
+        "count": 30,
+        "lint_pass_count": 30,
+        "lint_fail_count": 0
+      },
+      "61-100": {
+        "count": 40,
+        "lint_pass_count": 40,
+        "lint_fail_count": 0
+      }
+    },
+    "cutoff_band_positive_coverage": {
+      "covered_count": 40,
+      "total_count": 40
+    },
+    "cutoff_band_caveat_coverage": {
+      "covered_count": 40,
+      "total_count": 40
+    },
+    "grounding_result": {
+      "passed_count": 100,
+      "failed_count": 0
+    },
+    "sampled_explanations": [
+      {
+        "rank": 1,
+        "candidate_id": "CAND_0018499",
+        "reasoning": "Built a RAG-based ranking pipeline serving 50M+ queries per month for an internal recruiter-facing search product. Some profile detail remains less complete around langchain.",
+        "passed": true,
+        "failed_checks": []
+      },
+      {
+        "rank": 5,
+        "candidate_id": "CAND_0008425",
+        "reasoning": "Owned the end-to-end ranking pipeline at a recommendations-heavy consumer product: candidate sourcing \u2192 embedding generation (using a fine-tuned BGE-large) \u2192 Pinecone retrieval \u2192 learning-to-rank re-scoring (XGBoost) \u2192 behavioral-signal integration. Availability signals are weaker than the strongest candidates.",
+        "passed": true,
+        "failed_checks": []
+      },
+      {
+        "rank": 10,
+        "candidate_id": "CAND_0079387",
+        "reasoning": "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. India-based hybrid compatibility supports shortlist viability.",
+        "passed": true,
+        "failed_checks": []
+      },
+      {
+        "rank": 25,
+        "candidate_id": "CAND_0044855",
+        "reasoning": "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. Explicit evidence of retrieval and ranking depth is limited in the available profile.",
+        "passed": true,
+        "failed_checks": []
+      },
+      {
+        "rank": 50,
+        "candidate_id": "CAND_0099401",
+        "reasoning": "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. A 90-day notice period slows availability.",
+        "passed": true,
+        "failed_checks": []
+      },
+      {
+        "rank": 61,
+        "candidate_id": "CAND_0005649",
+        "reasoning": "Developed a semantic search feature for an internal knowledge base of ~500K documents. Profile consistency is weaker than the strongest candidates so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits.",
+        "passed": true,
+        "failed_checks": []
+      },
+      {
+        "rank": 75,
+        "candidate_id": "CAND_0046525",
+        "reasoning": "Built a RAG-based ranking pipeline serving 50M+ queries per month for an internal recruiter-facing search product. Some profile detail remains less complete around langchain so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits.",
+        "passed": true,
+        "failed_checks": []
+      },
+      {
+        "rank": 100,
+        "candidate_id": "CAND_0013097",
+        "reasoning": "Senior Software Engineer background still shows backend development with Python (FastAPI), PostgreSQL, and Redis at a B2B SaaS product. Explicit evidence of ranking evaluation is limited in the available profile so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits.",
+        "passed": true,
+        "failed_checks": []
+      }
+    ],
+    "explanation_quality_status": "PASS",
+    "sample_before_after": [
+      {
+        "candidate_id": "CAND_0005649",
+        "rank": 61,
+        "before": "Included near the cutoff because senior data scientist experience shows Developed a semantic search feature for an internal knowledge base of ~500K documents. and hands-on Python engineering. Included on the shortlist because Developed a semantic search feature for an internal knowledge base of ~500K documents. is still visible, but profile consistency is weaker than the strongest candidates and direct evidence is limited in the available profile keeps the profile below stronger candidates.",
+        "after": "Developed a semantic search feature for an internal knowledge base of ~500K documents. Profile consistency is weaker than the strongest candidates so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits."
+      },
+      {
+        "candidate_id": "CAND_0050454",
+        "rank": 62,
+        "before": "Included near the cutoff because ai engineer experience shows Developed a semantic search feature for an internal knowledge base of ~500K documents. and Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months.. Included on the shortlist because Developed a semantic search feature for an internal knowledge base of ~500K documents. is still visible, but some profile detail remains less complete around langchain and direct evidence is limited in the available profile keeps the profile below stronger candidates.",
+        "after": "Developed a semantic search feature for an internal knowledge base of ~500K documents. Some profile detail remains less complete around langchain so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits."
+      },
+      {
+        "candidate_id": "CAND_0010685",
+        "rank": 63,
+        "before": "Included near the cutoff because nlp engineer experience shows Developed a semantic search feature for an internal knowledge base of ~500K documents. and Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months.. Included on the shortlist because Developed a semantic search feature for an internal knowledge base of ~500K documents. is still visible, but some profile detail remains less complete around langchain and direct evidence is limited in the available profile keeps the profile below stronger candidates.",
+        "after": "Developed a semantic search feature for an internal knowledge base of ~500K documents. Some profile detail remains less complete around langchain so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits."
+      },
+      {
+        "candidate_id": "CAND_0002559",
+        "rank": 64,
+        "before": "Included near the cutoff because senior software engineer experience shows Mixed data science and analytics-engineering role at a marketing-analytics startup. and Backend development with Python (FastAPI), PostgreSQL, and Redis at a B2B SaaS product.. Included on the shortlist because Mixed data science and analytics-engineering role at a marketing-analytics startup. is still visible, but explicit evidence of vector or search infrastructure is limited in the available profile keeps the profile below stronger candidates.",
+        "after": "Mixed data science and analytics-engineering role at a marketing-analytics startup. Explicit evidence of vector or search infrastructure is limited in the available profile so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits."
+      },
+      {
+        "candidate_id": "CAND_0054123",
+        "rank": 65,
+        "before": "Included near the cutoff because applied ml engineer experience shows Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. and Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking.. Included on the shortlist because Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. is still visible, but some profile detail remains less complete around langchain and direct evidence is limited in the available profile keeps the profile below stronger candidates.",
+        "after": "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. Some profile detail remains less complete around langchain so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits."
+      }
+    ]
+  },
+  "grounding_result": {
+    "checked_count": 100,
+    "failed_count": 0,
+    "passed_count": 100,
+    "failures": []
+  },
+  "current_hashes": {
+    "submission_csv": "4ecfbb82fd7d591ad6c822df4546fe67453dd9ac703ddb6f1358431f302614b9",
+    "score_csv": "039318ea80944900f28ad91a407025f0950552097b12006a3927bf9792091e49",
+    "reasoning_jsonl": "24734b7c3278cc9e4f96eaada425e344c0d3f101e794e76b9a0bdcc79320202a"
+  },
+  "baseline_hashes": {
+    "submission_csv": "b9a252f40938115d9de89fc6cabc51cc1de05831de6bbc0095f3356a1af21a76",
+    "score_csv": "039318ea80944900f28ad91a407025f0950552097b12006a3927bf9792091e49",
+    "reasoning_jsonl": "1de87e274f52612bd9e4361b41d66668e328b42b1540ab845607913d5dde1569"
+  },
+  "score_output_changed": false,
+  "reasoning_output_changed": true,
+  "submission_text_changed": true,
+  "ranking_output_changed": false,
+  "top_100_ids_match": true,
+  "top_100_ranks_match": true,
+  "top_100_scores_match": true,
+  "baseline_v2_top_100_difference": [],
+  "remaining_warning": null
+}

@@ -1,0 +1,108 @@
+version: phase2_1
+multiplier_bounds:
+  clean: 1.0
+  moderate_min: 0.78
+  severe_min: 0.25
+rules:
+  signup_after_last_active:
+    enabled: true
+    severity: minor
+    score_contribution: 0.08
+    explanation_label: signup date after last active
+    candidate_facing_reasoning: false
+  current_role_has_past_end_date:
+    enabled: true
+    severity: minor
+    score_contribution: 0.08
+    explanation_label: current role ends before the dataset reference date
+    candidate_facing_reasoning: false
+  role_end_before_start:
+    enabled: true
+    severity: severe
+    score_contribution: 0.35
+    explanation_label: role end date precedes role start date
+    candidate_facing_reasoning: false
+  duration_months_mismatch:
+    enabled: true
+    severity: minor
+    score_contribution: 0.08
+    explanation_label: duration months mismatch
+    candidate_facing_reasoning: false
+  multiple_current_roles:
+    enabled: true
+    severity: minor
+    score_contribution: 0.08
+    explanation_label: multiple current roles
+    candidate_facing_reasoning: false
+  experience_span_mismatch:
+    enabled: true
+    severity: minor
+    score_contribution: 0.08
+    explanation_label: experience span mismatch
+    candidate_facing_reasoning: false
+  skill_duration_implausible:
+    enabled: true
+    severity: minor
+    score_contribution: 0.08
+    explanation_label: implausible skill duration
+    candidate_facing_reasoning: false
+  salary_min_greater_than_max:
+    enabled: true
+    severity: severe
+    score_contribution: 0.35
+    explanation_label: invalid salary range
+    candidate_facing_reasoning: false
+  skills_career_evidence_mismatch:
+    enabled: true
+    severity: minor
+    score_contribution: 0.08
+    explanation_label: skill claims are weakly supported by career evidence
+    candidate_facing_reasoning: false
+  excessive_overlap:
+    enabled: true
+    severity: moderate
+    score_contribution: 0.18
+    max_overlap_months: 12
+    explanation_label: excessive overlapping employment duration
+    candidate_facing_reasoning: false
+  unsupported_advanced_skill:
+    enabled: true
+    severity: moderate
+    score_contribution: 0.18
+    risky_skill_terms:
+      - llm
+      - embed
+      - pinecone
+      - vector
+      - langchain
+      - retriev
+      - rank
+      - recommend
+      - ml
+      - ai
+    corroboration_threshold: 0.4
+    minimum_skill_count: 1
+    explanation_label: advanced AI or search skills lack career corroboration
+    candidate_facing_reasoning: false
+  title_description_contradiction:
+    enabled: true
+    severity: moderate
+    score_contribution: 0.18
+    supported_title_families:
+      - ai
+      - ml
+      - search
+      - ranking
+      - retrieval
+      - recommendation
+    contradiction_handling_policy: require_description_support
+    minimum_evidence_threshold: 1
+    supporting_description_terms:
+      - ai
+      - ml
+      - search
+      - ranking
+      - retrieval
+      - recommend
+    explanation_label: titles imply relevance but descriptions do not support it
+    candidate_facing_reasoning: false

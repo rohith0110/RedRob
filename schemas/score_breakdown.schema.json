@@ -1,0 +1,1 @@
+{"type":"object","required":["candidate_id","final_score","deterministic_tie_break_key"]}

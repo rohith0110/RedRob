@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.venv*/
+venv/
+env/
+.env
+.env.*
+.pytest_cache/
+.ruff_cache/
+graphify-out/
+data/
+runs/*
+!runs/.gitkeep
+submissions/*
+!submissions/.gitkeep

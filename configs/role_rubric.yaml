@@ -1,0 +1,99 @@
+version: phase1.5
+concept_categories:
+  role_relevance:
+    positive_phrases:
+      - recommendation
+      - recommender
+      - search relevance
+      - ranking
+      - candidate matching
+      - personalization
+      - retrieval
+      - semantic search
+      - hybrid search
+      - dense retrieval
+      - bm25
+      - vector
+      - ann
+      - embedding
+    aliases:
+      - recommendation system
+      - ranking pipeline
+      - vector index
+      - embeddings
+    negative_phrases:
+      - weak evidence
+    field_weights:
+      career: 0.85
+      profile_skills: 0.15
+    hit_divisors:
+      career: 5
+      profile_skills: 8
+    positive_evidence: career history mentions retrieval/search/ranking evidence
+    weak_evidence: career history has weak retrieval/ranking evidence
+  production_evaluation:
+    positive_phrases:
+      - evaluation
+      - ndcg
+      - mrr
+      - map
+      - a/b
+      - experiment
+      - deployment
+      - monitoring
+      - latency
+      - drift
+      - index refresh
+      - production
+      - live users
+    aliases:
+      - a/b test
+      - production deployment
+    negative_phrases:
+      - no production
+    field_weights:
+      career_profile: 1.0
+    hit_divisor: 4
+    positive_evidence: profile includes production or evaluation signals
+  python_engineering:
+    positive_phrases:
+      - python
+      - pyspark
+      - fastapi
+      - flask
+      - airflow
+      - spark
+      - sql
+      - backend
+      - api
+    aliases:
+      - backend api
+    negative_phrases: []
+    field_weights:
+      career_skills: 1.0
+    hit_divisor: 4
+    positive_evidence: Python or backend engineering evidence appears in career/skills
+experience_bands:
+  - min_years: 4
+    max_years: 14
+    score: 1.0
+  - min_years: 2
+    max_years: 20
+    score: 0.6
+  - min_years: 0
+    max_years: 100
+    score: 0.25
+location_logistics:
+  preferred_modes:
+    - remote
+    - flexible
+  preferred_country: india
+  preferred_score: 1.0
+  fallback_score: 0.55
+availability:
+  open_to_work: 0.35
+  response_rate: 0.35
+  response_time: 0.15
+  notice_period: 0.15
+  max_response_time_hours: 240
+  max_notice_days: 120

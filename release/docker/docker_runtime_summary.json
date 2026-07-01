@@ -1,0 +1,40 @@
+{
+  "primary_run": {
+    "elapsed_seconds": 247.042,
+    "stage_timings": {
+      "audit": 34.692,
+      "normalization": 109.003,
+      "evidence": 44.596,
+      "credibility": 15.346,
+      "behavioral": 13.192,
+      "scores_v2": 17.182,
+      "reasoning_v2": 12.731,
+      "submission_v2": 0.3
+    },
+    "runtime_status": "WARNING",
+    "peak_memory_mb": null,
+    "peak_memory_method": null,
+    "host_elapsed_seconds": 260.723
+  },
+  "second_verification_run": {
+    "elapsed_seconds": 251.11,
+    "stage_timings": {
+      "audit": 35.378,
+      "normalization": 111.935,
+      "evidence": 43.793,
+      "credibility": 15.318,
+      "behavioral": 13.601,
+      "scores_v2": 17.619,
+      "reasoning_v2": 13.047,
+      "submission_v2": 0.419
+    },
+    "runtime_status": "WARNING",
+    "peak_memory_mb": 7132.16,
+    "peak_memory_method": "docker stats polling",
+    "host_elapsed_seconds": 264.855
+  },
+  "warnings": [
+    "Docker runtime is inside the 240-270 second packaging warning band.",
+    "Docker second verification run also remained inside the 240-270 second warning band."
+  ]
+}

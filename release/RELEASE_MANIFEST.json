@@ -1,0 +1,314 @@
+{
+  "ranking_freeze_tag": "ranking-freeze-step3b",
+  "ranking_freeze_commit": "dc2c92deae0e8cc95672f1b682c2e094b32df1eb",
+  "ranking_run_commit": "dc2c92deae0e8cc95672f1b682c2e094b32df1eb",
+  "package_commit": "0141dbfcc270d38c0a60c6113ad54c73a783e91b",
+  "final_audit_commit": null,
+  "ranking_working_tree_clean": true,
+  "packaging_working_tree_clean": true,
+  "working_tree_status_lines": [],
+  "post_freeze_packaging_scope": [
+    "release provenance clarification",
+    "final audit report commit",
+    "submission metadata placeholders",
+    "upload package inventory",
+    "documentation-only reproducibility notes"
+  ],
+  "post_freeze_packaging_does_not_alter": [
+    "candidate IDs",
+    "ranks",
+    "score CSV",
+    "score formula",
+    "ranker logic",
+    "Docker ranking behavior"
+  ],
+  "known_reproducibility_notes": [
+    "Docker full-run timing is host and storage dependent; validated runs remained below the official 300-second limit.",
+    "Final submission CSV was byte-identical across validated Docker runs.",
+    "Diagnostic score-breakdown float formatting may vary by runtime environment while official output fields remain invariant."
+  ],
+  "input_dataset_sha256": "de7b8cae39a9f9378a2cd4f8153bfc1f84960bce0ae520f263423d129df4b335",
+  "config_bundle_hashes": {
+    "configuration_files": {
+      "configs\\role_rubric.yaml": "29daaa56748b90e05618538345e7e686eaac5cc16106a8ddb373be574dab0c81",
+      "configs\\baseline_weights.yaml": "17b278c95576cf08867d3df8489108b94badacf9b5a0c8677c2779548e3e4968",
+      "configs\\runtime.yaml": "02d84f7caae516b22c6226da1dbec164746540e2c0cb39db9516d73caa5b5e0c",
+      "configs\\evidence_patterns.yaml": "5eaaa369f2e4fe403fcefe9d84318a6064c57ddb36b7fc36af1abb68f5a974ba",
+      "configs\\scoring_weights.yaml": "ac527a3832fd33becf4f42ecb4ac879e5a7ce83dc3c542df786dd5dd091677b6",
+      "configs\\credibility_rules.yaml": "606a2d9927f2f02e94985c6be96028b274d5dbbdbc4efaf98a52f8d8db4e14f5",
+      "configs\\behavioral_rules.yaml": "5ac37fea27cf08ddbe9866c1bf9b1c4864ddaae5e1a5597823d2848cf26ecf6b",
+      "configs\\semantic_config.yaml": "ae2b0ebb8b20ba9be6c7a0ae510057e03f72c65b04838c46708af842d065533a",
+      "configs\\logging.yaml": "ff9f8b5702e00d968f698400371cbd1be28ff81de7c231ccd9e3d48255492029"
+    },
+    "phase2_bundles": {
+      "evidence": "2b6266c1e96c46c87c263c493e0011e6bb270b4cae83f70de0359bff5758ebb3",
+      "scoring": "3f44d821dd9e5ce923a4d434a1eb92251c75b29c4d9e9893041e5375c873b591",
+      "credibility": "91a31b923d0fd2c9ab9c9b7ff83607063f739e97bef5283ed3166d167e22fb4c",
+      "behavioral": "6be21b844a28ef5442e0145627bae87d07d5bcca6d8ede68dd1d2a8375edb1c4",
+      "semantic": "aa5458f050fd1163d9fdef212a11c1bfb4319a6a6b3ad0ce31b7c42265127940"
+    },
+    "runtime_config": {
+      "path": "configs\\runtime.yaml",
+      "raw_sha256": "02d84f7caae516b22c6226da1dbec164746540e2c0cb39db9516d73caa5b5e0c",
+      "resolved_sha256": "563c08f2726c3003ccba59579c4c81165b42fd0f1451ab2df85ee2e14e8b1257",
+      "version": "phase2-preflight",
+      "processing_mode": "memory",
+      "chunk_size": 5000,
+      "dataset_reference_date": "2026-06-30"
+    }
+  },
+  "final_score_csv_sha256": "039318ea80944900f28ad91a407025f0950552097b12006a3927bf9792091e49",
+  "final_reasoning_jsonl_sha256": "24734b7c3278cc9e4f96eaada425e344c0d3f101e794e76b9a0bdcc79320202a",
+  "final_submission_csv_sha256": "4ecfbb82fd7d591ad6c822df4546fe67453dd9ac703ddb6f1358431f302614b9",
+  "final_csv_filename": "Team_loading.csv",
+  "full_data_run_id": "release_final_local",
+  "docker_run_id": "docker_release_full",
+  "local_runtime_benchmark": {
+    "elapsed_seconds": 226.949,
+    "stage_timings": {
+      "audit": 8.386,
+      "behavioral": 21.5,
+      "credibility": 24.285,
+      "evidence": 63.675,
+      "normalized": 60.211,
+      "reasoning_v2": 15.278,
+      "scores_v2": 25.346,
+      "submission_v2": 0.246
+    },
+    "total_stage_timings": {
+      "audit": 8.386,
+      "behavioral": 21.5,
+      "credibility": 24.285,
+      "evidence": 63.675,
+      "normalized": 60.211,
+      "reasoning_v2": 15.278,
+      "scores_v2": 25.346,
+      "submission_v2": 0.246
+    },
+    "stage_attempts": {
+      "audit": {
+        "attempt_count": 1,
+        "latest_status": "completed",
+        "latest_started_at": "2026-07-01T13:31:30.801619+00:00",
+        "latest_finished_at": "2026-07-01T13:31:39.187449+00:00"
+      },
+      "behavioral": {
+        "attempt_count": 1,
+        "latest_status": "completed",
+        "latest_started_at": "2026-07-01T13:34:11.752838+00:00",
+        "latest_finished_at": "2026-07-01T13:34:33.252463+00:00"
+      },
+      "credibility": {
+        "attempt_count": 1,
+        "latest_status": "completed",
+        "latest_started_at": "2026-07-01T13:33:47.416877+00:00",
+        "latest_finished_at": "2026-07-01T13:34:11.701419+00:00"
+      },
+      "evidence": {
+        "attempt_count": 1,
+        "latest_status": "completed",
+        "latest_started_at": "2026-07-01T13:32:42.730579+00:00",
+        "latest_finished_at": "2026-07-01T13:33:46.405772+00:00"
+      },
+      "normalized": {
+        "attempt_count": 1,
+        "latest_status": "completed",
+        "latest_started_at": "2026-07-01T13:31:39.220458+00:00",
+        "latest_finished_at": "2026-07-01T13:32:39.431180+00:00"
+      },
+      "reasoning_v2": {
+        "attempt_count": 1,
+        "latest_status": "completed",
+        "latest_started_at": "2026-07-01T13:34:58.721160+00:00",
+        "latest_finished_at": "2026-07-01T13:35:13.998871+00:00"
+      },
+      "scores_v2": {
+        "attempt_count": 1,
+        "latest_status": "completed",
+        "latest_started_at": "2026-07-01T13:34:33.307731+00:00",
+        "latest_finished_at": "2026-07-01T13:34:58.653530+00:00"
+      },
+      "submission_v2": {
+        "attempt_count": 1,
+        "latest_status": "completed",
+        "latest_started_at": "2026-07-01T13:35:14.042775+00:00",
+        "latest_finished_at": "2026-07-01T13:35:14.288963+00:00"
+      }
+    },
+    "git_commit": "dc2c92deae0e8cc95672f1b682c2e094b32df1eb",
+    "working_tree_dirty": false,
+    "peak_memory_mb": 3982.164,
+    "peak_memory_method": "psutil working set",
+    "output_sizes": {
+      "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local\\audit\\audit_summary.json": 5178,
+      "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local\\normalized\\candidates_normalized.jsonl": 544900554,
+      "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local\\normalized\\candidates_normalized.parquet": 76471477,
+      "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local\\normalized\\candidate_context.jsonl": 437762928,
+      "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local\\evidence\\evidence_summary.parquet": 3886219,
+      "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local\\credibility\\credibility_breakdown.parquet": 940089,
+      "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local\\behavioral\\availability_breakdown.parquet": 2589672,
+      "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local\\scores\\score_breakdown_v2.csv": 25426683,
+      "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local\\reasoning\\reasoning_v2.parquet": 35063,
+      "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local\\reasoning\\reasoning_style_lint.jsonl": 49110,
+      "D:\\Coding\\Randoms\\RedRob\\submissions\\Team_loading.csv": 27286
+    },
+    "warning": "PASS",
+    "cpu_info": {
+      "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+      "machine": "AMD64",
+      "cpu_count": 20,
+      "operating_system": "Windows-11-10.0.26200-SP0"
+    },
+    "processing_mode": "memory",
+    "dataset_reference_date": "2026-06-30",
+    "semantic_enabled": false,
+    "semantic_status": {
+      "status": "disabled",
+      "reason": "semantic scoring disabled by configuration"
+    },
+    "run_kind": "fresh",
+    "runtime_status": "PASS",
+    "command": [
+      "python",
+      "rank.py",
+      "--mode",
+      "v2",
+      "--candidates",
+      "D:/Coding/Randoms/RedRob/data/candidates.jsonl",
+      "--out",
+      "D:/Coding/Randoms/RedRob/submissions/Team_loading.csv",
+      "--run-id",
+      "release_final_local",
+      "--run-dir",
+      "D:/Coding/Randoms/RedRob/runs"
+    ],
+    "returncode": 0,
+    "run_path": "D:\\Coding\\Randoms\\RedRob\\runs\\release_final_local"
+  },
+  "docker_runtime_benchmark": {
+    "elapsed_seconds": 247.042,
+    "stage_timings": {
+      "audit": 34.692,
+      "normalization": 109.003,
+      "evidence": 44.596,
+      "credibility": 15.346,
+      "behavioral": 13.192,
+      "scores_v2": 17.182,
+      "reasoning_v2": 12.731,
+      "submission_v2": 0.3
+    },
+    "runtime_status": "WARNING",
+    "peak_memory_mb": null,
+    "peak_memory_method": null,
+    "host_elapsed_seconds": 260.723
+  },
+  "docker_second_verification_run": {
+    "run_id": "docker_release_full_2",
+    "runtime_benchmark": {
+      "elapsed_seconds": 251.11,
+      "stage_timings": {
+        "audit": 35.378,
+        "normalization": 111.935,
+        "evidence": 43.793,
+        "credibility": 15.318,
+        "behavioral": 13.601,
+        "scores_v2": 17.619,
+        "reasoning_v2": 13.047,
+        "submission_v2": 0.419
+      },
+      "runtime_status": "WARNING",
+      "peak_memory_mb": 7132.16,
+      "peak_memory_method": "docker stats polling",
+      "host_elapsed_seconds": 264.855
+    },
+    "validator_result": {
+      "passed": true,
+      "errors": []
+    },
+    "comparison_to_local": {
+      "submission_csv_hash_equal": true,
+      "reasoning_jsonl_hash_equal": true,
+      "score_csv_hash_equal": false,
+      "submission_rows_exact_equal": true,
+      "candidate_id_rank_score_equal": true,
+      "score_breakdown_semantic_comparison": {
+        "semantic_match": true,
+        "row_count_equal": true,
+        "candidate_id_equal": true,
+        "rank_equal": true,
+        "final_score_equal": true,
+        "local_row_count": 100000,
+        "docker_row_count": 100000
+      }
+    }
+  },
+  "peak_memory_measurements": {
+    "local": {
+      "peak_memory_mb": 3982.164,
+      "method": "psutil working set"
+    },
+    "docker": {
+      "peak_memory_mb": null,
+      "method": null
+    }
+  },
+  "validator_result": {
+    "local": {
+      "passed": true,
+      "errors": []
+    },
+    "docker": {
+      "passed": true,
+      "errors": []
+    }
+  },
+  "test_result": {
+    "command": "pytest -q; python rank.py --mode baseline --allow-small-sample --candidates data/_tiny_candidates.jsonl --out submissions/tiny_baseline_release.csv --run-id tiny_baseline_release --run-dir runs; python rank.py --mode v2 --allow-small-sample --candidates data/_tiny_candidates.jsonl --out submissions/tiny_v2_release.csv --run-id tiny_v2_release --run-dir runs; pytest tests/test_sandbox_smoke.py -q",
+    "passed": true
+  },
+  "exact_reproduction_commands": {
+    "local_full_run": "python scripts/benchmark_runtime.py --command python rank.py --mode v2 --candidates D:/Coding/Randoms/RedRob/data/candidates.jsonl --out D:/Coding/Randoms/RedRob/submissions/Team_loading.csv --run-id release_final_local --run-dir D:/Coding/Randoms/RedRob/runs",
+    "local_resume": "python rank.py --mode v2 --resume --candidates D:/Coding/Randoms/RedRob/data/candidates.jsonl --out D:/Coding/Randoms/RedRob/submissions/Team_loading.csv --run-id release_final_local --run-dir D:/Coding/Randoms/RedRob/runs",
+    "docker_build": "docker build -t redrob-ranker:release .",
+    "docker_run_linux_macos": "docker run --rm --network none -v \"$(pwd)/data:/data:ro\" -v \"$(pwd)/submissions:/out\" redrob-ranker:release python rank.py --mode v2 --candidates /data/candidates.jsonl --out /out/Team_loading.csv --run-id docker_release_full --run-dir /tmp/runs",
+    "docker_run_powershell": "docker run --rm --network none -v \"${PWD}/data:/data:ro\" -v \"${PWD}/submissions:/out\" redrob-ranker:release python rank.py --mode v2 --candidates /data/candidates.jsonl --out /out/Team_loading.csv --run-id docker_release_full --run-dir /tmp/runs",
+    "validator": "python validate_submission.py submissions/Team_loading.csv",
+    "tests": "pytest -q; python rank.py --mode baseline --allow-small-sample --candidates data/_tiny_candidates.jsonl --out submissions/tiny_baseline_release.csv --run-id tiny_baseline_release --run-dir runs; python rank.py --mode v2 --allow-small-sample --candidates data/_tiny_candidates.jsonl --out submissions/tiny_v2_release.csv --run-id tiny_v2_release --run-dir runs; pytest tests/test_sandbox_smoke.py -q"
+  },
+  "semantic_configuration_state": {
+    "resolved_semantic_config": {
+      "version": "phase2",
+      "enabled": false,
+      "artifact_path": "artifacts/semantic/semantic_scores.parquet",
+      "manifest_path": "artifacts/semantic/semantic_manifest.json",
+      "model_identifier": "offline-only"
+    },
+    "runtime_status": {
+      "status": "disabled",
+      "reason": "semantic scoring disabled by configuration"
+    }
+  },
+  "hosted_api_during_ranking": false,
+  "hosted_api_declaration": "No hosted API or external network call is used during the submitted ranking pipeline.",
+  "local_docker_comparison": {
+    "submission_csv_hash_equal": true,
+    "reasoning_jsonl_hash_equal": true,
+    "score_csv_hash_equal": false,
+    "submission_rows_exact_equal": true,
+    "candidate_id_rank_score_equal": true,
+    "score_breakdown_semantic_comparison": {
+      "semantic_match": true,
+      "row_count_equal": true,
+      "candidate_id_equal": true,
+      "rank_equal": true,
+      "final_score_equal": true,
+      "local_row_count": 100000,
+      "docker_row_count": 100000
+    }
+  },
+  "warnings": [
+    "Docker runtime is host-dependent with a thin sub-300-second margin; validated runs remained below the official limit.",
+    "Manifest provenance distinguishes the frozen ranking commit from later packaging-only commits.",
+    "Diagnostic score-breakdown CSV hashes can vary across environments due to float formatting while candidate_id, rank, final_score, reasoning, and submission CSV remain invariant."
+  ]
+}

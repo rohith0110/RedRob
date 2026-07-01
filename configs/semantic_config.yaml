@@ -1,0 +1,5 @@
+version: phase2
+enabled: false
+artifact_path: artifacts/semantic/semantic_scores.parquet
+manifest_path: artifacts/semantic/semantic_manifest.json
+model_identifier: offline-only

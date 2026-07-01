@@ -1,0 +1,165 @@
+{
+  "total_explanations": 100,
+  "top_100_count": 100,
+  "rank_band_style_distribution": {
+    "1-10": {
+      "recommendation_matching_heavy": 6,
+      "availability_logistics_constrained": 3,
+      "retrieval_ranking_heavy": 1
+    },
+    "11-30": {
+      "recommendation_matching_heavy": 11,
+      "availability_logistics_constrained": 9
+    },
+    "31-60": {
+      "recommendation_matching_heavy": 14,
+      "availability_logistics_constrained": 14,
+      "retrieval_ranking_heavy": 1,
+      "credibility_constrained": 1
+    },
+    "61-100": {
+      "lower_cutoff_candidate": 40
+    }
+  },
+  "exact_duplicate_count": 41,
+  "max_exact_duplicate_count": 5,
+  "repeated_opening_threshold": 2,
+  "opening_window_size": 5,
+  "repeated_opening_count": 48,
+  "repeated_nearby_opening_count": 48,
+  "awkward_pattern_count": 0,
+  "lint_pass_count": 100,
+  "lint_fail_count": 0,
+  "duplicate_adjacent_word_count": 0,
+  "lowercase_sentence_start_count": 0,
+  "dangling_fragment_count": 0,
+  "bare_fragment_count": 0,
+  "repeated_snippet_count": 0,
+  "generic_praise_warning_count": 0,
+  "forbidden_term_count": 0,
+  "rank_band_breakdown": {
+    "1-10": {
+      "count": 10,
+      "lint_pass_count": 10,
+      "lint_fail_count": 0
+    },
+    "11-30": {
+      "count": 20,
+      "lint_pass_count": 20,
+      "lint_fail_count": 0
+    },
+    "31-60": {
+      "count": 30,
+      "lint_pass_count": 30,
+      "lint_fail_count": 0
+    },
+    "61-100": {
+      "count": 40,
+      "lint_pass_count": 40,
+      "lint_fail_count": 0
+    }
+  },
+  "cutoff_band_positive_coverage": {
+    "covered_count": 40,
+    "total_count": 40
+  },
+  "cutoff_band_caveat_coverage": {
+    "covered_count": 40,
+    "total_count": 40
+  },
+  "grounding_result": {
+    "passed_count": 100,
+    "failed_count": 0
+  },
+  "sampled_explanations": [
+    {
+      "rank": 1,
+      "candidate_id": "CAND_0018499",
+      "reasoning": "Built a RAG-based ranking pipeline serving 50M+ queries per month for an internal recruiter-facing search product. Some profile detail remains less complete around langchain.",
+      "passed": true,
+      "failed_checks": []
+    },
+    {
+      "rank": 5,
+      "candidate_id": "CAND_0008425",
+      "reasoning": "Owned the end-to-end ranking pipeline at a recommendations-heavy consumer product: candidate sourcing \u2192 embedding generation (using a fine-tuned BGE-large) \u2192 Pinecone retrieval \u2192 learning-to-rank re-scoring (XGBoost) \u2192 behavioral-signal integration. Availability signals are weaker than the strongest candidates.",
+      "passed": true,
+      "failed_checks": []
+    },
+    {
+      "rank": 10,
+      "candidate_id": "CAND_0079387",
+      "reasoning": "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. India-based hybrid compatibility supports shortlist viability.",
+      "passed": true,
+      "failed_checks": []
+    },
+    {
+      "rank": 25,
+      "candidate_id": "CAND_0044855",
+      "reasoning": "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. Explicit evidence of retrieval and ranking depth is limited in the available profile.",
+      "passed": true,
+      "failed_checks": []
+    },
+    {
+      "rank": 50,
+      "candidate_id": "CAND_0099401",
+      "reasoning": "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. A 90-day notice period slows availability.",
+      "passed": true,
+      "failed_checks": []
+    },
+    {
+      "rank": 61,
+      "candidate_id": "CAND_0005649",
+      "reasoning": "Developed a semantic search feature for an internal knowledge base of ~500K documents. Profile consistency is weaker than the strongest candidates so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits.",
+      "passed": true,
+      "failed_checks": []
+    },
+    {
+      "rank": 75,
+      "candidate_id": "CAND_0046525",
+      "reasoning": "Built a RAG-based ranking pipeline serving 50M+ queries per month for an internal recruiter-facing search product. Some profile detail remains less complete around langchain so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits.",
+      "passed": true,
+      "failed_checks": []
+    },
+    {
+      "rank": 100,
+      "candidate_id": "CAND_0013097",
+      "reasoning": "Senior Software Engineer background still shows backend development with Python (FastAPI), PostgreSQL, and Redis at a B2B SaaS product. Explicit evidence of ranking evaluation is limited in the available profile so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits.",
+      "passed": true,
+      "failed_checks": []
+    }
+  ],
+  "explanation_quality_status": "PASS",
+  "sample_before_after": [
+    {
+      "candidate_id": "CAND_0005649",
+      "rank": 61,
+      "before": "Included near the cutoff because senior data scientist experience shows Developed a semantic search feature for an internal knowledge base of ~500K documents. and hands-on Python engineering. Included on the shortlist because Developed a semantic search feature for an internal knowledge base of ~500K documents. is still visible, but profile consistency is weaker than the strongest candidates and direct evidence is limited in the available profile keeps the profile below stronger candidates.",
+      "after": "Developed a semantic search feature for an internal knowledge base of ~500K documents. Profile consistency is weaker than the strongest candidates so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits."
+    },
+    {
+      "candidate_id": "CAND_0050454",
+      "rank": 62,
+      "before": "Included near the cutoff because ai engineer experience shows Developed a semantic search feature for an internal knowledge base of ~500K documents. and Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months.. Included on the shortlist because Developed a semantic search feature for an internal knowledge base of ~500K documents. is still visible, but some profile detail remains less complete around langchain and direct evidence is limited in the available profile keeps the profile below stronger candidates.",
+      "after": "Developed a semantic search feature for an internal knowledge base of ~500K documents. Some profile detail remains less complete around langchain so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits."
+    },
+    {
+      "candidate_id": "CAND_0010685",
+      "rank": 63,
+      "before": "Included near the cutoff because nlp engineer experience shows Developed a semantic search feature for an internal knowledge base of ~500K documents. and Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months.. Included on the shortlist because Developed a semantic search feature for an internal knowledge base of ~500K documents. is still visible, but some profile detail remains less complete around langchain and direct evidence is limited in the available profile keeps the profile below stronger candidates.",
+      "after": "Developed a semantic search feature for an internal knowledge base of ~500K documents. Some profile detail remains less complete around langchain so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits."
+    },
+    {
+      "candidate_id": "CAND_0002559",
+      "rank": 64,
+      "before": "Included near the cutoff because senior software engineer experience shows Mixed data science and analytics-engineering role at a marketing-analytics startup. and Backend development with Python (FastAPI), PostgreSQL, and Redis at a B2B SaaS product.. Included on the shortlist because Mixed data science and analytics-engineering role at a marketing-analytics startup. is still visible, but explicit evidence of vector or search infrastructure is limited in the available profile keeps the profile below stronger candidates.",
+      "after": "Mixed data science and analytics-engineering role at a marketing-analytics startup. Explicit evidence of vector or search infrastructure is limited in the available profile so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits."
+    },
+    {
+      "candidate_id": "CAND_0054123",
+      "rank": 65,
+      "before": "Included near the cutoff because applied ml engineer experience shows Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. and Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking.. Included on the shortlist because Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. is still visible, but some profile detail remains less complete around langchain and direct evidence is limited in the available profile keeps the profile below stronger candidates.",
+      "after": "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking. Some profile detail remains less complete around langchain so the candidate stays near the shortlist cutoff rather than among stronger retrieval-and-ranking fits."
+    }
+  ]
+}

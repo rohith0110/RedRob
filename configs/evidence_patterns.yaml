@@ -1,0 +1,303 @@
+version: phase2
+categories:
+  retrieval_ranking_relevance:
+    aliases:
+      - recommendation system
+      - recommender system
+      - semantic search
+      - hybrid search
+      - candidate matching
+      - ranking pipeline
+    phrase_patterns:
+      - search relevance
+      - recommendation
+      - recommendations
+      - personalization
+      - matching engine
+      - marketplace ranking
+      - feed ranking
+      - retrieval system
+      - document retrieval
+      - learning to rank
+      - product discovery
+      - search quality
+      - improved product discovery
+      - ranked marketplace listings
+      - built a personalized feed
+      - designed recommendations
+      - improved search results
+      - matched users to jobs
+      - matched users to products
+      - matched users to vendors
+      - tuned relevance
+      - measured ranking outcomes
+      - shipped a customer-facing search system
+      - optimized recommendation quality
+    polarity: positive
+    source_field_priority:
+      career_description: 1.0
+      career_title: 0.65
+      profile_summary: 0.5
+      profile_headline: 0.35
+      skill: 0.2
+      assessment: 0.1
+      behavioral: 0.0
+    category_weight: 1.0
+    confidence_rules:
+      match_divisor: 2
+    max_contribution_cap: 2.8
+    recency_factor:
+      current_role_multiplier: 1.0
+      recent_years: 5
+      older_role_multiplier: 0.85
+    require_corroboration: false
+  vector_ir_infrastructure:
+    aliases:
+      - vector database
+      - vector index
+      - dense retrieval
+      - hybrid retrieval
+    phrase_patterns:
+      - embeddings
+      - approximate nearest neighbor
+      - ann
+      - faiss
+      - pinecone
+      - qdrant
+      - weaviate
+      - milvus
+      - elasticsearch
+      - opensearch
+      - lucene
+      - bm25
+      - index refresh
+      - embedding drift
+      - retrieval regression
+    polarity: positive
+    source_field_priority:
+      career_description: 0.95
+      career_title: 0.55
+      profile_summary: 0.4
+      profile_headline: 0.25
+      skill: 0.25
+      assessment: 0.15
+      behavioral: 0.0
+    category_weight: 0.9
+    confidence_rules:
+      match_divisor: 2
+    max_contribution_cap: 2.2
+    recency_factor:
+      current_role_multiplier: 1.0
+      recent_years: 5
+      older_role_multiplier: 0.85
+    require_corroboration: true
+  ranking_evaluation_experimentation:
+    aliases:
+      - relevance judgment
+      - offline benchmark
+      - online experiment
+      - evaluation framework
+      - offline-to-online correlation
+    phrase_patterns:
+      - ndcg
+      - mrr
+      - map
+      - precision
+      - recall
+      - a/b test
+      - click-through rate
+      - relevance metrics
+      - regression test
+    polarity: positive
+    source_field_priority:
+      career_description: 1.0
+      career_title: 0.35
+      profile_summary: 0.55
+      profile_headline: 0.2
+      skill: 0.1
+      assessment: 0.0
+      behavioral: 0.0
+    category_weight: 0.9
+    confidence_rules:
+      match_divisor: 2
+    max_contribution_cap: 2.2
+    recency_factor:
+      current_role_multiplier: 1.0
+      recent_years: 6
+      older_role_multiplier: 0.85
+    require_corroboration: false
+  production_delivery_systems:
+    aliases:
+      - customer-facing
+      - service ownership
+      - production pipeline
+    phrase_patterns:
+      - deployed
+      - shipped
+      - production
+      - live users
+      - latency
+      - throughput
+      - monitoring
+      - observability
+      - incidents
+      - reliability
+      - model refresh
+      - index maintenance
+      - on-call
+    polarity: positive
+    source_field_priority:
+      career_description: 1.0
+      career_title: 0.3
+      profile_summary: 0.45
+      profile_headline: 0.15
+      skill: 0.05
+      assessment: 0.0
+      behavioral: 0.0
+    category_weight: 1.0
+    confidence_rules:
+      match_divisor: 2
+    max_contribution_cap: 2.4
+    recency_factor:
+      current_role_multiplier: 1.0
+      recent_years: 6
+      older_role_multiplier: 0.85
+    require_corroboration: false
+  python_practical_engineering:
+    aliases:
+      - backend engineering
+      - feature pipeline
+    phrase_patterns:
+      - python
+      - fastapi
+      - flask
+      - django
+      - api
+      - service
+      - unit tests
+      - ci/cd
+      - docker
+      - kubernetes
+      - data pipeline
+      - sql
+      - pyspark
+    polarity: positive
+    source_field_priority:
+      career_description: 0.85
+      career_title: 0.45
+      profile_summary: 0.35
+      profile_headline: 0.2
+      skill: 0.35
+      assessment: 0.15
+      behavioral: 0.0
+    category_weight: 0.8
+    confidence_rules:
+      match_divisor: 2
+    max_contribution_cap: 2.0
+    recency_factor:
+      current_role_multiplier: 1.0
+      recent_years: 6
+      older_role_multiplier: 0.9
+    require_corroboration: false
+  product_founding_behavior:
+    aliases:
+      - product feedback
+      - customer feedback
+      - user research
+    phrase_patterns:
+      - end-to-end ownership
+      - recruiter workflow
+      - iteration
+      - metrics
+      - small team
+      - startup
+      - shipped quickly
+      - cross-functional
+      - product manager
+      - marketplace
+    polarity: positive
+    source_field_priority:
+      career_description: 0.75
+      career_title: 0.2
+      profile_summary: 0.5
+      profile_headline: 0.2
+      skill: 0.05
+      assessment: 0.0
+      behavioral: 0.0
+    category_weight: 0.6
+    confidence_rules:
+      match_divisor: 2
+    max_contribution_cap: 1.6
+    recency_factor:
+      current_role_multiplier: 1.0
+      recent_years: 6
+      older_role_multiplier: 0.9
+    require_corroboration: false
+  preferred_differentiators:
+    aliases:
+      - llm fine-tuning
+      - learning-to-rank
+    phrase_patterns:
+      - lora
+      - qlora
+      - peft
+      - xgboost learning-to-rank
+      - neural ranking
+      - hr-tech
+      - recruiting technology
+      - open source
+      - inference optimization
+      - distributed systems
+    polarity: positive
+    source_field_priority:
+      career_description: 0.8
+      career_title: 0.2
+      profile_summary: 0.3
+      profile_headline: 0.15
+      skill: 0.2
+      assessment: 0.05
+      behavioral: 0.0
+    category_weight: 0.45
+    confidence_rules:
+      match_divisor: 2
+    max_contribution_cap: 1.2
+    recency_factor:
+      current_role_multiplier: 1.0
+      recent_years: 6
+      older_role_multiplier: 0.9
+    require_corroboration: true
+  risk_signals:
+    aliases:
+      - tutorial only
+      - demo only
+      - service company
+    phrase_patterns:
+      - curious about ai
+      - experimented with chatgpt
+      - tutorial
+      - langchain
+      - no production
+      - research
+      - speech recognition
+      - robotics
+      - cv
+      - computer vision
+      - consulting
+    polarity: negative
+    source_field_priority:
+      career_description: 0.75
+      career_title: 0.25
+      profile_summary: 0.6
+      profile_headline: 0.2
+      skill: 0.15
+      assessment: 0.0
+      behavioral: 0.0
+    category_weight: 0.8
+    confidence_rules:
+      match_divisor: 2
+    max_contribution_cap: 1.8
+    recency_factor:
+      current_role_multiplier: 1.0
+      recent_years: 8
+      older_role_multiplier: 1.0
+    require_corroboration: false

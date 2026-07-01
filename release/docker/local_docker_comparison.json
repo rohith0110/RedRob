@@ -1,0 +1,16 @@
+{
+  "submission_csv_hash_equal": true,
+  "reasoning_jsonl_hash_equal": true,
+  "score_csv_hash_equal": false,
+  "submission_rows_exact_equal": true,
+  "candidate_id_rank_score_equal": true,
+  "score_breakdown_semantic_comparison": {
+    "semantic_match": true,
+    "row_count_equal": true,
+    "candidate_id_equal": true,
+    "rank_equal": true,
+    "final_score_equal": true,
+    "local_row_count": 100000,
+    "docker_row_count": 100000
+  }
+}
